@@ -1,1 +1,25 @@
 /* BASIC STYLES HERE */
+
+main {
+  background-color: #000000;
+  background-image: url(https://i.pinimg.com/originals/d9/54/3a/d9543a74313cc166d2c4bb62b78b4fac.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.pokeDex {
+  background-color: rgba(33, 15, 228, 0.493);
+  color: azure;
+}
+
+.pokeDex:hover {
+  cursor: pointer;
+  border-color: rgba(33, 15, 228, 0.493);
+  shadow: 1px 1px 1px 1px rgba(33, 15, 228, 0.493);
+}
+
+.card-border {
+  border: -10px;
+  border-bottom: rgb(212, 215, 29);
+}

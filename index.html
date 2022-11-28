@@ -19,27 +19,77 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">w4d3-pokedex</span>
+        <img src="https://img.freepik.com/free-icon/pokeball_318-268310.jpg?w=360" height="45" alt="" loading="lazy">
+        <span class="ms-2">PokeDex</span>
       </a>
     </nav>
   </header>
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
-        </div>
+
+  <main class="container-fluid">
+    <section class="row">
+      <!-- SECTION poke api information -->
+      <div class="col-12 col-md 3">
+        <section class="row text-center text-light">
+          <h1>PokeDex</h1>
+        </section>
+        <section id="poke-api" class="row p-5 gap-1">
+          <!-- ANCHOR poke-api boiler plate -->
+          <!-- <div class="col-12 card rounded-pill">
+            <h2><img src="https://img.freepik.com/free-icon/pokeball_318-268310.jpg?w=360" height="45" alt=""
+                loading="lazy"> Poke Data</h2>
+          </div> -->
+        </section>
       </div>
-    </div>
+      <!-- SECTION active Pokemon information -->
+      <div id="active-pokemon" class="col-12 col-md-6">
+        <!-- <div class="card">
+          <section class="row">
+            <div class="col-12 col-md-8 text-center">Name</div>
+            <div class="col-12 col-md 4 text-center">HP</div>
+          </section>
+          <section class="row">
+            <div class="col-12 col-md-10"><img src="" alt=""></div>
+          </section>
+          <section class="row justify-content-center">
+            <div class="col-12 col-md-10 text-center">description?</div>
+          </section>
+          <section class="row">
+            <div class="col-12 col-md-2 text-center">Energy</div>
+            <div class="col-12 col-md-8 text-center">Attack</div>
+            <div class="col-12 col-md-2 text-center">Power</div>
+          </section>
+          <section class="row justify-content-evenly">
+            <div class="col-12 col-md-3">weakness</div>
+            <div class="col-12 col-md-3">resistance</div>
+            <div class="col-12 col-md-3">retreat cost</div>
+          </section> -->
+        
+      </div>
+
+      </div>
+      <!-- SECTION sandbox spi information -->
+      <div class="col-12 col-md 3">
+        <section class="row text-center text-light">
+          <h1>My Pokemon</h1>
+        </section>
+        <section id="sandbox-api" class="row p-5">
+          <div class="col-12 card rounded-pill">
+            <h2><img src="https://img.freepik.com/free-icon/pokeball_318-268310.jpg?w=360" height="45" alt=""
+                loading="lazy"> Poke Data</h2>
+          </div>
+        </section>
+      </div>
+    </section>
   </main>
+
+
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
-      <p><small>Made with 💖 by CodeWorks</small></p>
+      <p><small>Made with 💖 by Bryan</small></p>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>

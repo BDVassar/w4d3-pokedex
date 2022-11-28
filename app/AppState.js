@@ -1,11 +1,21 @@
-import { Value } from "./Models/Value.js"
+
+import { Pokemon } from "./Models/Pokemon.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import { loadState } from "./Utils/Store.js"
 
 class AppState extends EventEmitter {
-  /** @type {import('./Models/Value').Value[]} */
-  values = loadState('values', [Value])
+
+
+  pokeDex = []
+  /** @type {import( './Models/Pokemon').Pokemon} */
+  activepokeDex = null
+
+  /** @type {import( './Models/Pokemon').Pokemon[]|null} */
+  myPokemon = []
+
+  /** @type {import( './Models/Pokemon').Pokemon} */
+  activePokemon = null
 }
 
 export const appState = new Proxy(new AppState(), {
